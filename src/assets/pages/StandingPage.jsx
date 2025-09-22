@@ -14,7 +14,6 @@ export default function ChampionshipPage() {
     axios
       .get("http://127.0.0.1:8000/api/championships")
       .then((response) => {
-        console.log(response.data.data);
         setChampionship(response.data.data);
         setError(null);
       })
@@ -63,7 +62,7 @@ export default function ChampionshipPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           {/* <h1 className="text-4xl font-bold text-gray-900 mb-4">Campionati</h1> */}
-          <p className="text-xl text-gray-600 mb-4">Scopri tutti i campionati disponibili</p>
+          <p className="text-xl text-gray-600 mb-4">Scopri tutte le classifiche disponibili</p>
 
           {/* Barra di ricerca */}
           <div className="max-w-md mx-auto">
@@ -110,7 +109,7 @@ export default function ChampionshipPage() {
 
                     <div className="flex-shrink-0 ml-4">
                       <a
-                        href={`/championship/${championship.id}`}
+                        href={`/standings/${championship.id}`}
                         className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-200 group"
                         aria-label={`Visualizza dettagli del campionato ${championship.name}`}
                       >

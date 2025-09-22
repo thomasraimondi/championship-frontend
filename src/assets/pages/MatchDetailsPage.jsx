@@ -14,7 +14,6 @@ export default function MatchDetailsPage() {
       try {
         setLoading(true);
         const response = await axios.get(`http://127.0.0.1:8000/api/games/${id}`);
-        console.log(response.data.data);
         setMatchData(response.data.data);
       } catch (err) {
         setError(err.response?.data?.message || err.message || "Failed to fetch match data");
@@ -125,11 +124,10 @@ export default function MatchDetailsPage() {
                     </div>
                   );
                 } else if (goal.soccer.team_id === matchData.away_team?.id) {
-                  console.log("goal away:", goal);
                   return (
-                    <div className="w-full flex items-center justify-center border-b border-gray-200">
+                    <div key={goal.id} className="w-full flex items-center justify-center border-b border-gray-200">
                       <div className="w-1/2"></div>
-                      <div key={goal.id}>
+                      <div>
                         {goal.soccer.name} - {goal.minute}
                       </div>
                     </div>

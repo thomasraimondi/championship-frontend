@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout";
-import HomePage from "./pages/HomePage";
-import ChampionshipPage from "./pages/ChampionshipPage";
-import TeamPage from "./pages/TeamPage";
-import PlayerPage from "./pages/PlayerPage";
-import MatchPage from "./pages/MatchPage";
-import StandingPage from "./pages/StandingPage";
-import ChampionshipDetailsPage from "./pages/ChampionshipDetailsPage";
-import TeamDetailsPage from "./pages/TeamDetailsPage";
-import PlayerDetailsPage from "./pages/PlayerDetailsPage";
-import MatchDetailsPage from "./pages/MatchDetailsPage";
-import StandingDetailsPage from "./pages/StandingDetailsPage";
+import MainLayout from "./assets/layouts/MainLayout";
+import HomePage from "./assets/pages/HomePage";
+import ChampionshipPage from "./assets/pages/ChampionshipPage";
+import TeamPage from "./assets/pages/TeamPage";
+import PlayerPage from "./assets/pages/PlayerPage";
+import MatchPage from "./assets/pages/MatchPage";
+import StandingPage from "./assets/pages/StandingPage";
+import ChampionshipDetailsPage from "./assets/pages/ChampionshipDetailsPage";
+import TeamDetailsPage from "./assets/pages/TeamDetailsPage";
+import PlayerDetailsPage from "./assets/pages/PlayerDetailsPage";
+import MatchDetailsPage from "./assets/pages/MatchDetailsPage";
+import StandingDetailsPage from "./assets/pages/StandingDetailsPage";
 
 export default function App() {
   return (

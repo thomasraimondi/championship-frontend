@@ -21,7 +21,6 @@ export default function PlayerDetailsPage() {
 
         // Fetch player details with all related data
         const playerResponse = await axios.get(`http://127.0.0.1:8000/api/soccers/${id}`);
-        console.log(playerResponse.data.data);
         const playerData = playerResponse.data.data;
 
         setPlayer(playerData);

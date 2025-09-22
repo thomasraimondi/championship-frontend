@@ -18,7 +18,6 @@ export default function StandingDetailsPage() {
       setLoading(true);
       try {
         const response = await axios.get(`http://127.0.0.1:8000/api/standings/${id}`);
-        console.log("Standings data:", response.data.data);
 
         if (response.data.data) {
           setStandings(response.data.data.standings);
@@ -119,7 +118,6 @@ export default function StandingDetailsPage() {
       </div>
     );
   }
-  console.log("standings:", standings);
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">

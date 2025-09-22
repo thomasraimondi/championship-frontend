@@ -15,7 +15,6 @@ export default function ChampionshipDetailsPage() {
         setLoading(true);
 
         const championshipResponse = await axios.get(`http://127.0.0.1:8000/api/championships/${id}`);
-        console.log(championshipResponse.data.data);
         const championshipData = championshipResponse.data.data;
 
         setChampionship(championshipData);

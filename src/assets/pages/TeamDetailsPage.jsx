@@ -19,7 +19,6 @@ export default function TeamDetailsPage() {
 
         // Fetch team details with all related data
         const teamResponse = await axios.get(`http://127.0.0.1:8000/api/teams/${id}`);
-        console.log(teamResponse.data.data);
         const teamData = teamResponse.data.data;
 
         setTeam(teamData);

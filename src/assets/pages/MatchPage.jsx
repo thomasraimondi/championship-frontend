@@ -14,7 +14,6 @@ export default function MatchPage() {
     axios
       .get("http://127.0.0.1:8000/api/games")
       .then((response) => {
-        console.log(response.data.data);
         setMatches(response.data.data);
         setError(null);
       })
