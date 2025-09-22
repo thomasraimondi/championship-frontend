@@ -88,14 +88,14 @@ export default function TeamPage() {
                     <div className="flex items-center space-x-3">
                       {team.image !== null && (
                         <div className="flex-shrink-0">
-                          {/* <img
+                          <img
                             src={team.image}
                             alt={`Logo ${team.name}`}
                             className="w-12 h-12 object-cover rounded-lg border-2 border-gray-100"
                             onError={(e) => {
                               e.target.src = "https://via.placeholder.com/64x64/f3f4f6/9ca3af?text=Logo";
                             }}
-                          /> */}
+                          />
                         </div>
                       )}
                       <div className="flex-1 min-w-0 flex">
